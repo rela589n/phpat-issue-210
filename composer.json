@@ -1,0 +1,26 @@
+{
+    "name": "rela589n/phpat-issue-210",
+    "autoload": {
+        "psr-4": {
+            "Rela589n\\PhpatIssue210\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rela589n\\PhpatIssue210\\Tests\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Yevhen Sidelnyk",
+            "email": "zsidelnik@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.1"
+    },
+    "require-dev": {
+        "phpat/phpat": "^0.10.15",
+        "phpstan/phpstan": "^1.10"
+    }
+}

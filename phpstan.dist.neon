@@ -1,0 +1,22 @@
+includes:
+    - vendor/phpat/phpat/extension.neon
+
+parameters:
+    level: 9
+    phpVersion: 80213
+    editorUrl: 'phpstorm://open?file=%%file%%&line=%%line%%'
+    excludePaths:
+        analyseAndScan:
+            - vendor
+            - tests/*/Stub/*
+            - rector.php
+    fileExtensions:
+        - 'php'
+    phpat:
+        ignore_built_in_classes: true
+
+services:
+    -
+        class: Rela589n\PhpatIssue210\Tests\ArchitectureTest
+        tags:
+            - phpat.test
